@@ -1,10 +1,11 @@
+import FormCV from "./components/FormCV";
 
 function App() {
   return (
     <div className="App">
-      <h1><span>CV</span>Creador</h1>
+      <h1>Creador<span>CV</span></h1>
       <div>
-        
+        <FormCV />
       </div>
       <div className="attrribution">
         Santiago Cano 2023 <a className="github" href="https://github.com/LaVieja1/">

@@ -1,0 +1,9 @@
+.area {
+    padding-right: 2rem;
+    text-align: left;
+    grid-column: span 3;
+}
+
+.area input {
+    font-size: 1.5rem;
+}

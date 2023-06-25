@@ -3,6 +3,7 @@ import React from "react";
 import Name from "./Name/name";
 import Information from "./Information/information";
 import Area from "./Area/area";
+import Skills from "./Skills/skills";
 
 
 function FormCV() {
@@ -17,6 +18,7 @@ function FormCV() {
                     <Name />
                     <Information />
                     <Area activeButton={"d"} />
+                    <Skills activeButton={activeButton} />
                 </div>
             </div>
         </div>

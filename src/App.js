@@ -1,4 +1,5 @@
 import FormCV from "./components/FormCV";
+import './App.css';
 
 function App() {
   return (

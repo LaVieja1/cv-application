@@ -4,6 +4,7 @@ import Name from "./Name/name";
 import Information from "./Information/information";
 import Area from "./Area/area";
 import Skills from "./Skills/skills";
+import Education from "./Education/education";
 
 
 function FormCV() {
@@ -19,6 +20,7 @@ function FormCV() {
                     <Information />
                     <Area activeButton={"d"} />
                     <Skills activeButton={activeButton} />
+                    <Education activeButton={activeButton} />
                 </div>
             </div>
         </div>

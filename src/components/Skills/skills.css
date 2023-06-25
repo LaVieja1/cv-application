@@ -19,7 +19,7 @@
 }
 
 .skills input::placeholder {
-    color: var(--lightPlaceholder);
+    color: var(--placeholder);
 }
 
 .skills button {

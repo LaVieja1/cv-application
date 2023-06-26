@@ -24,7 +24,7 @@
 
 .skills button {
     color: var(--light);
-    background-color: var(--purple);
+    background-color: var(--green);
     box-shadow: var(--grey) 3px 3px 0 0;
 }
 

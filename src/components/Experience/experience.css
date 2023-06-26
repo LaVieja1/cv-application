@@ -1,0 +1,29 @@
+.experience {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    text-align: left;
+    grid-row: 3;
+    grid-column: span 4;
+    grid-row-end: span 2;
+}
+
+.experience input,
+.experience textarea {
+    font-size: 1.2rem;
+    resize: vertical;
+}
+
+.experience form {
+    margin-top: 1rem;
+}
+
+.experience button {
+    color: var(--light);
+    background-color: var(--green);
+    box-shadow: var(--grey) 3px 3px 0 0;
+}
+
+.experience .deleteBtn {
+    background-color: var(--red);
+    color: var(--light);
+}

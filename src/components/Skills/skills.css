@@ -4,7 +4,7 @@
     text-align: left;
     grid-row: 3;
     grid-column: span 2;
-    background-color: var(--lightPurple);
+    background-color: var(--grey);
     border-radius: 10px 10px 0 0;
     color: var(--light);
 }

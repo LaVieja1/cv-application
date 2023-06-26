@@ -1,11 +1,157 @@
 :root {
+    --black: #000;
     --green: #75b359;
     --brown: #2E1114;
     --red: #813234;
     --purple: #64485C;
-    --lightPurple: #83677B;
+    --lightPurple: #8d7085;
     --blue: #3634cc;
     --grey: #777471;
     --light: #e8f1f2;
     --placeholder: #00000083;
+}
+
+body {
+    background-color: #b1acac;
+}
+
+.App {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color: var(--black);
+}
+
+.App h1 {
+    user-select: none;
+    color: var(--lightPurple);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 3rem;
+}
+
+h1 span {
+    color: var(--red);
+    font-size: 3.5rem;
+}
+
+.formcv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.border {
+    margin: 1rem 10%;
+    border: 3px solid var(--black);
+    border-radius: 10px;
+    box-shadow: rgba(15, 15, 15, 0.7) 10px 10px;
+}
+
+.cv {
+    padding: 2rem;
+    display: grid;
+    max-width: 21cm;
+    margin: 10mm auto;
+    grid-template-columns: repeat(6, minmax(3rem, 1fr));
+}
+
+@media screen and (max-width: 700px) {
+    .cv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .information {
+        padding: 1rem 0;
+    }
+}
+
+.content-headers,
+.content-form {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+input,
+textarea {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid grey;
+    outline: 0;
+    color: var(--black);
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+button {
+    appearance: button;
+    background-color: var(--purple);
+    background-image: none;
+    border: 1px solid var(--purple);
+    border-radius: 4px;
+    box-shadow: var(--light) 4px 4px 0 0, var(--purple) 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: var(--red);
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+button:active {
+    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 0;
+}
+
+button:not([disabled]):active {
+    box-shadow: var(--black) 2px 2px 0 0, var(--black) 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+}
+
+.print {
+    font-size: 2rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.attribution {
+    padding: 1rem 0;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--red);
+}
+
+body::-webkit-scrollbar-corner {
+    display: none;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border: 3px solid var(--purple);
+    background: var(--purple);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--black);
+    border-radius: 10px;
 }

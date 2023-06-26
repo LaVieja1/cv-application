@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: #b1acac;
+    background-color: #ddd8d8;
 }
 
 .App {
@@ -123,6 +123,7 @@ button:not([disabled]):active {
 }
 
 .print {
+    background-color: var(--lightPurple);
     font-size: 2rem;
     padding: 0.5rem 1.5rem;
 }
